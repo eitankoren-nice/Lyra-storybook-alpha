@@ -71,3 +71,32 @@ export default defineConfig([
   },
 ])
 ```
+
+## Deploying Storybook to GitHub Pages
+
+### Build
+
+```bash
+pnpm build-storybook
+```
+
+This outputs a static Storybook site to the `storybook-static/` directory.
+
+### Deploy
+
+```bash
+pnpm deploy-storybook
+```
+
+This publishes the `storybook-static/` directory to the `gh-pages` branch using the [`gh-pages`](https://github.com/tschaub/gh-pages) package.
+
+### GitHub Pages Setup
+
+1. Push your code to `https://github.com/eitankoren-nice/Lyra-storybook-alpha.git`
+2. Go to **Settings** > **Pages**
+3. Under **Source**, select **Deploy from a branch**
+4. Set **Branch** to `gh-pages` and folder to `/ (root)`
+5. Click **Save**
+
+The Storybook will be available at:
+`https://eitankoren-nice.github.io/Lyra-storybook-alpha/`
