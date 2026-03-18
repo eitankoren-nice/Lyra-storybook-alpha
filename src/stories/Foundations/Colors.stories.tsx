@@ -23,6 +23,20 @@ const colorTokens = {
     { name: "--muted", label: "Muted", hex: "#f5f5f5" },
     { name: "--muted-foreground", label: "Muted Foreground", hex: "rgba(0,0,0,0.56)" },
   ],
+  "Status": [
+    { name: "--critical-strong", label: "Critical Strong", hex: "#b72424" },
+    { name: "--critical-subtle", label: "Critical Subtle", hex: "#fff5f5" },
+    { name: "--success-strong", label: "Success Strong", hex: "#1f7526" },
+    { name: "--success-subtle", label: "Success Subtle", hex: "#effbf0" },
+    { name: "--info-strong", label: "Info Strong", hex: "#0a66ad" },
+    { name: "--info-subtle", label: "Info Subtle", hex: "#f0f7ff" },
+    { name: "--warning-strong", label: "Warning Strong", hex: "#916100" },
+    { name: "--warning-subtle", label: "Warning Subtle", hex: "#fffae8" },
+  ],
+  "Selected": [
+    { name: "--selected-strong", label: "Selected Strong", hex: "#0a52a3" },
+    { name: "--selected-subtle", label: "Selected Subtle", hex: "#f0f7ff" },
+  ],
   "Borders & Rings": [
     { name: "--border", label: "Border", hex: "rgba(0,0,0,0.1)" },
     { name: "--input", label: "Input", hex: "rgba(0,0,0,0.44)" },
@@ -122,6 +136,31 @@ export const PairedSwatches: Story = {
         bg: "--destructive",
         fg: "--destructive-foreground",
         label: "Destructive",
+      },
+      {
+        bg: "--critical-subtle",
+        fg: "--critical-strong",
+        label: "Critical",
+      },
+      {
+        bg: "--success-subtle",
+        fg: "--success-strong",
+        label: "Success",
+      },
+      {
+        bg: "--info-subtle",
+        fg: "--info-strong",
+        label: "Info",
+      },
+      {
+        bg: "--warning-subtle",
+        fg: "--warning-strong",
+        label: "Warning",
+      },
+      {
+        bg: "--selected-subtle",
+        fg: "--selected-strong",
+        label: "Selected",
       },
     ];
     return (
