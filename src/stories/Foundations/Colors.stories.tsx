@@ -2,31 +2,31 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const colorTokens = {
   "Core Surfaces": [
-    { name: "--background", label: "Background" },
-    { name: "--foreground", label: "Foreground" },
-    { name: "--card", label: "Card" },
-    { name: "--card-foreground", label: "Card Foreground" },
-    { name: "--popover", label: "Popover" },
-    { name: "--popover-foreground", label: "Popover Foreground" },
+    { name: "--background", label: "Background", hex: "white" },
+    { name: "--foreground", label: "Foreground", hex: "rgba(0,0,0,0.8)" },
+    { name: "--card", label: "Card", hex: "white" },
+    { name: "--card-foreground", label: "Card Foreground", hex: "rgba(0,0,0,0.8)" },
+    { name: "--popover", label: "Popover", hex: "white" },
+    { name: "--popover-foreground", label: "Popover Foreground", hex: "rgba(0,0,0,0.8)" },
   ],
   "Brand / Action": [
-    { name: "--primary", label: "Primary" },
-    { name: "--primary-foreground", label: "Primary Foreground" },
-    { name: "--secondary", label: "Secondary" },
-    { name: "--secondary-foreground", label: "Secondary Foreground" },
-    { name: "--accent", label: "Accent" },
-    { name: "--accent-foreground", label: "Accent Foreground" },
+    { name: "--primary", label: "Primary", hex: "#0d66c9" },
+    { name: "--primary-foreground", label: "Primary Foreground", hex: "#f0f7ff" },
+    { name: "--secondary", label: "Secondary", hex: "white" },
+    { name: "--secondary-foreground", label: "Secondary Foreground", hex: "rgba(0,0,0,0.8)" },
+    { name: "--accent", label: "Accent", hex: "rgba(0,0,0,0.04)" },
+    { name: "--accent-foreground", label: "Accent Foreground", hex: "rgba(0,0,0,0.8)" },
   ],
   "State / Feedback": [
-    { name: "--destructive", label: "Destructive" },
-    { name: "--destructive-foreground", label: "Destructive Foreground" },
-    { name: "--muted", label: "Muted" },
-    { name: "--muted-foreground", label: "Muted Foreground" },
+    { name: "--destructive", label: "Destructive", hex: "#b72424" },
+    { name: "--destructive-foreground", label: "Destructive Foreground", hex: "#fff5f5" },
+    { name: "--muted", label: "Muted", hex: "#f5f5f5" },
+    { name: "--muted-foreground", label: "Muted Foreground", hex: "rgba(0,0,0,0.56)" },
   ],
   "Borders & Rings": [
-    { name: "--border", label: "Border" },
-    { name: "--input", label: "Input" },
-    { name: "--ring", label: "Ring" },
+    { name: "--border", label: "Border", hex: "rgba(0,0,0,0.1)" },
+    { name: "--input", label: "Input", hex: "rgba(0,0,0,0.44)" },
+    { name: "--ring", label: "Ring", hex: "#6950cd" },
   ],
   "Chart Palette": [
     { name: "--chart-1", label: "Chart 1" },
@@ -36,18 +36,18 @@ const colorTokens = {
     { name: "--chart-5", label: "Chart 5" },
   ],
   Sidebar: [
-    { name: "--sidebar", label: "Sidebar" },
-    { name: "--sidebar-foreground", label: "Sidebar Foreground" },
-    { name: "--sidebar-primary", label: "Sidebar Primary" },
-    { name: "--sidebar-primary-foreground", label: "Sidebar Primary FG" },
-    { name: "--sidebar-accent", label: "Sidebar Accent" },
-    { name: "--sidebar-accent-foreground", label: "Sidebar Accent FG" },
-    { name: "--sidebar-border", label: "Sidebar Border" },
-    { name: "--sidebar-ring", label: "Sidebar Ring" },
+    { name: "--sidebar", label: "Sidebar Background", hex: "#f4f5f6" },
+    { name: "--sidebar-foreground", label: "Sidebar Foreground", hex: "rgba(0,0,0,0.8)" },
+    { name: "--sidebar-primary", label: "Sidebar Primary", hex: "#0d66c9" },
+    { name: "--sidebar-primary-foreground", label: "Sidebar Primary FG", hex: "#f0f7ff" },
+    { name: "--sidebar-accent", label: "Sidebar Accent", hex: "rgba(0,0,0,0.04)" },
+    { name: "--sidebar-accent-foreground", label: "Sidebar Accent FG", hex: "rgba(0,0,0,0.8)" },
+    { name: "--sidebar-border", label: "Sidebar Border", hex: "rgba(0,0,0,0.1)" },
+    { name: "--sidebar-ring", label: "Sidebar Ring", hex: "#6950cd" },
   ],
 };
 
-function Swatch({ name, label }: { name: string; label: string }) {
+function Swatch({ name, label, hex }: { name: string; label: string; hex?: string }) {
   return (
     <div className="flex items-center gap-3">
       <div
@@ -56,7 +56,9 @@ function Swatch({ name, label }: { name: string; label: string }) {
       />
       <div className="min-w-0">
         <p className="text-sm font-medium text-foreground">{label}</p>
-        <p className="font-mono text-xs text-muted-foreground">{name}</p>
+        <p className="font-mono text-xs text-muted-foreground">
+          {name}{hex && <span className="ml-1 opacity-60">({hex})</span>}
+        </p>
       </div>
     </div>
   );
