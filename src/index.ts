@@ -30,8 +30,21 @@ export {
   BreadcrumbEllipsis,
 } from "./components/ui/breadcrumb"
 export { Button, buttonVariants } from "./components/ui/button"
+export { Calendar, CalendarDayButton } from "./components/ui/calendar"
 export { Card, CardHeader, CardFooter, CardTitle, CardAction, CardDescription, CardContent } from "./components/ui/card"
 export { Checkbox } from "./components/ui/checkbox"
+export { Combobox, type ComboboxOption } from "./components/ui/combobox"
+export {
+  Command,
+  CommandDialog,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandShortcut,
+  CommandSeparator,
+} from "./components/ui/command"
 export {
   Dialog,
   DialogClose,
@@ -62,6 +75,7 @@ export {
   DropdownMenuSubContent,
 } from "./components/ui/dropdown-menu"
 export { Input } from "./components/ui/input"
+export { InputGroup, InputGroupAddon } from "./components/ui/input-group"
 export { Label } from "./components/ui/label"
 export {
   Popover,
