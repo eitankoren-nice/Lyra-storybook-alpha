@@ -21,7 +21,7 @@ const invoices = [
 ];
 
 const meta: Meta = {
-  title: "Components/DataDisplay/Table",
+  title: "Components/Table",
   parameters: {
     layout: "padded",
   },

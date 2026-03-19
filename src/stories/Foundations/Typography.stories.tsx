@@ -20,7 +20,7 @@ export const TypeScale: Story = {
           Typography
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Type scale using the Geist Variable font from the Nova preset.
+          Type scale using the Inter Variable font from the Tailwind preset.
         </p>
       </div>
 

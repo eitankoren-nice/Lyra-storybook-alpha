@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const meta: Meta = {
-  title: "Components/Overlay/Popover",
+  title: "Components/Popover",
   parameters: {
     layout: "centered",
   },

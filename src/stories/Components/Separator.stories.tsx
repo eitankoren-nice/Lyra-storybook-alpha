@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Separator } from "@/components/ui/separator";
 
 const meta: Meta<typeof Separator> = {
-  title: "Components/DataDisplay/Separator",
+  title: "Components/Separator",
   component: Separator,
   argTypes: {
     orientation: {

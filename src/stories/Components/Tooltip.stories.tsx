@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { PlusIcon, InfoIcon } from "lucide-react";
 
 const meta: Meta = {
-  title: "Components/Overlay/Tooltip",
+  title: "Components/Tooltip",
   parameters: {
     layout: "centered",
   },

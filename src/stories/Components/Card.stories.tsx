@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const meta: Meta<typeof Card> = {
-  title: "Components/DataDisplay/Card",
+  title: "Components/Card",
   component: Card,
   argTypes: {
     size: {

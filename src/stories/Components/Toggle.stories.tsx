@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const meta: Meta<typeof Toggle> = {
-  title: "Components/Inputs/Toggle",
+  title: "Components/Toggle",
   component: Toggle,
   argTypes: {
     variant: {

@@ -3,7 +3,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 
 const meta: Meta<typeof Checkbox> = {
-  title: "Components/Inputs/Checkbox",
+  title: "Components/Checkbox",
   component: Checkbox,
   argTypes: {
     checked: { control: "boolean" },

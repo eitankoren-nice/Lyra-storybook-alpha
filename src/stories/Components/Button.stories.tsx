@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MailIcon, ChevronRightIcon, LoaderIcon, PlusIcon, TrashIcon } from "lucide-react";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Inputs/Button",
+  title: "Components/Button",
   component: Button,
   args: {
     children: "Button",

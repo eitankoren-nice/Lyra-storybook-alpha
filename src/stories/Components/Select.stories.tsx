@@ -12,7 +12,7 @@ import {
 import { Label } from "@/components/ui/label";
 
 const meta: Meta = {
-  title: "Components/Inputs/Select",
+  title: "Components/Select",
   parameters: {
     layout: "centered",
   },

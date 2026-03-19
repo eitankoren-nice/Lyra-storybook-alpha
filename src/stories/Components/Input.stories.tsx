@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const meta: Meta<typeof Input> = {
-  title: "Components/Inputs/Input",
+  title: "Components/Input",
   component: Input,
   args: {
     type: "text",

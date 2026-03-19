@@ -3,7 +3,7 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 
 const meta: Meta<typeof Switch> = {
-  title: "Components/Inputs/Switch",
+  title: "Components/Switch",
   component: Switch,
   argTypes: {
     checked: { control: "boolean" },

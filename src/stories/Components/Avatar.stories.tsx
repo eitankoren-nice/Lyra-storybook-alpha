@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/avatar";
 
 const meta: Meta<typeof Avatar> = {
-  title: "Components/DataDisplay/Avatar",
+  title: "Components/Avatar",
   component: Avatar,
   argTypes: {
     size: {
