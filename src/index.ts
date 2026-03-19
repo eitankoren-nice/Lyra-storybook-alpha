@@ -77,6 +77,7 @@ export {
 export { Input } from "./components/ui/input"
 export { InputGroup, InputGroupAddon } from "./components/ui/input-group"
 export { Label } from "./components/ui/label"
+export { MultiSelectDropdown, type MultiSelectOption } from "./components/ui/multi-select-dropdown"
 export {
   Popover,
   PopoverAnchor,

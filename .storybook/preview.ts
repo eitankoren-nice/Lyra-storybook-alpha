@@ -5,6 +5,12 @@ import "../src/index.css";
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        method: "alphabetical",
+        order: ["Foundations", "Components", "Patterns"],
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
