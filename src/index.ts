@@ -133,4 +133,6 @@ export { Toggle, toggleVariants } from "./components/ui/toggle"
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./components/ui/tooltip"
 
 // Pattern Components
+export { DocumentCard, type Document } from "./components/patterns/document-card"
+export { DocumentManager, DEFAULT_DOCUMENTS, type DocumentManagerProps } from "./components/patterns/document-manager"
 export { PageHeader } from "./components/patterns/page-header"
