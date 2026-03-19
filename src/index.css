@@ -8,37 +8,37 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.32 0 0);
+  --foreground: #000000CC;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.32 0 0);
+  --card-foreground: #000000CC;
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.32 0 0);
-  --primary: oklch(0.55 0.16 256);
-  --primary-foreground: oklch(0.97 0.02 256);
+  --popover-foreground: #000000CC;
+  --primary: #0D66C9;
+  --primary-foreground: #F0F7FF;
   --secondary: oklch(1 0 0);
-  --secondary-foreground: oklch(0.32 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.55 0 0);
-  --accent: oklch(0.98 0 0);
-  --accent-foreground: oklch(0.32 0 0);
-  --destructive: oklch(0.52 0.18 27);
-  --destructive-foreground: oklch(0.98 0.02 27);
-  --border: oklch(0.92 0 0);
-  --input: oklch(0.62 0 0);
-  --ring: oklch(0.60 0.17 285);
+  --secondary-foreground: #000000CC;
+  --muted: #F5F5F5;
+  --muted-foreground: #0000008F;
+  --accent: #0000000A;
+  --accent-foreground: #000000CC;
+  --destructive: #B72424;
+  --destructive-foreground: #FFF5F5;
+  --border: #0000001A;
+  --input: #00000070;
+  --ring: #6950CD;
   --chart-1: oklch(0.809 0.105 251.813);
   --chart-2: oklch(0.623 0.214 259.815);
   --chart-3: oklch(0.546 0.245 262.881);
   --chart-4: oklch(0.488 0.243 264.376);
   --chart-5: oklch(0.424 0.199 265.638);
-  --sidebar: oklch(0.96 0.01 250);
-  --sidebar-foreground: oklch(0.32 0 0);
-  --sidebar-primary: oklch(0.55 0.16 256);
-  --sidebar-primary-foreground: oklch(0.97 0.02 256);
-  --sidebar-accent: oklch(0.98 0 0);
-  --sidebar-accent-foreground: oklch(0.32 0 0);
-  --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: oklch(0.60 0.17 285);
+  --sidebar: #F4F5F6;
+  --sidebar-foreground: #000000CC;
+  --sidebar-primary: #0D66C9;
+  --sidebar-primary-foreground: #F0F7FF;
+  --sidebar-accent: #0000000A;
+  --sidebar-accent-foreground: #000000CC;
+  --sidebar-border: #0000001A;
+  --sidebar-ring: #6950CD;
 
   /* Status Colors */
   --critical-strong: #B72424;
@@ -51,8 +51,8 @@
   --warning-subtle: #FFFAE8;
 
   /* Selected Colors */
-  --selected-strong: oklch(0.5032 0.1589 257.41);
-  --selected-subtle: oklch(0.9697 0.0188 241.38);
+  --selected-strong: #0D66C9;
+  --selected-subtle: #F0F7FF;
 }
 
 .dark {
